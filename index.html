@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zestia · Comer bien para moverse en Valdivia</title>
+<meta name="description" content="Zestia: guía de comida saludable para quienes hacen deporte en Valdivia. Qué comer antes, durante y después del fútbol, running, remo, kayak, ciclismo y trekking, y dónde encontrarlo en la ciudad.">
+<meta name="theme-color" content="#0e3a32">
+<meta property="og:title" content="Zestia · Comer bien para moverse en Valdivia">
+<meta property="og:description" content="Qué comer según tu deporte y dónde encontrarlo en Valdivia.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.svg?v=20261018" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20261018">
+<script>document.documentElement.classList.add('js');</script>
+<script src="main.js?v=20261018" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#principios">Saltar al contenido</a>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Zestia, inicio">
+    <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
+      <circle cx="20" cy="20" r="18" fill="var(--zest)"/>
+      <circle cx="20" cy="20" r="13" fill="var(--cream)"/>
+      <g stroke="var(--zest)" stroke-width="2" stroke-linecap="round">
+        <line x1="20" y1="8" x2="20" y2="32"/><line x1="8" y1="20" x2="32" y2="20"/>
+        <line x1="11.5" y1="11.5" x2="28.5" y2="28.5"/><line x1="28.5" y1="11.5" x2="11.5" y2="28.5"/>
+      </g>
+    </svg>
+    <span>Zestia</span>
+  </a>
+  <nav class="nav__links" id="navLinks" aria-label="Principal">
+    <a href="#principios">Comer bien</a>
+    <a href="#deportes">Por deporte</a>
+    <a href="#despensa">Despensa del sur</a>
+    <a href="#locales">Dónde comer</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow reveal">Valdivia · Región de Los Ríos</p>
+      <h1 class="hero__title">
+        <span class="line"><span class="reveal">Come con</span></span>
+        <span class="line"><span class="reveal"><em>chispa</em>, muévete</span></span>
+        <span class="line"><span class="reveal">con el río.</span></span>
+      </h1>
+      <p class="hero__lead reveal">Zestia es una guía para comer saludable en una ciudad que rema, corre y juega a la pelota bajo la lluvia. Te contamos qué poner en el plato según tu deporte, y dónde encontrarlo en Valdivia.</p>
+      <div class="hero__cta reveal">
+        <a class="btn btn--zest" href="#deportes">Elige tu deporte</a>
+        <a class="btn btn--ghost" href="#locales">Ver locales</a>
+      </div>
+    </div>
+
+    <div class="hero__art" aria-hidden="true">
+      <svg class="citrus" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="96" fill="var(--zest)"/>
+        <circle cx="100" cy="100" r="84" fill="#f8d77a"/>
+        <g fill="#f5c443" stroke="#fbe7ad" stroke-width="3">
+          <path d="M100 100 L100 22 A78 78 0 0 1 155 45 Z"/>
+          <path d="M100 100 L155 45 A78 78 0 0 1 178 100 Z"/>
+          <path d="M100 100 L178 100 A78 78 0 0 1 155 155 Z"/>
+          <path d="M100 100 L155 155 A78 78 0 0 1 100 178 Z"/>
+          <path d="M100 100 L100 178 A78 78 0 0 1 45 155 Z"/>
+          <path d="M100 100 L45 155 A78 78 0 0 1 22 100 Z"/>
+          <path d="M100 100 L22 100 A78 78 0 0 1 45 45 Z"/>
+          <path d="M100 100 L45 45 A78 78 0 0 1 100 22 Z"/>
+        </g>
+        <circle cx="100" cy="100" r="8" fill="#fbe7ad"/>
+      </svg>
+      <div class="hero__badge">
+        <strong>5</strong>
+        <span>deportes<br>con guía</span>
+      </div>
+    </div>
+
+    <svg class="river" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+      <path class="river__w river__w--1" d="M0 120 C 180 80 360 160 540 120 S 900 80 1080 120 S 1440 160 1620 120 S 1980 80 2160 120 S 2520 160 2880 120 V220 H0 Z"/>
+      <path class="river__w river__w--2" d="M0 150 C 200 120 400 180 600 150 S 1000 120 1200 150 S 1600 180 1800 150 S 2200 120 2400 150 S 2800 180 2880 150 V220 H0 Z"/>
+    </svg>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>salmón</span><i>✺</i><span>merluza</span><i>✺</i><span>congrio</span><i>✺</i><span>quinoa</span><i>✺</i><span>avena</span><i>✺</i><span>papas</span><i>✺</i><span>legumbres</span><i>✺</i><span>huevos</span><i>✺</i><span>yogur</span><i>✺</i><span>nueces</span><i>✺</i><span>fruta de temporada</span><i>✺</i>
+      <span>salmón</span><i>✺</i><span>merluza</span><i>✺</i><span>congrio</span><i>✺</i><span>quinoa</span><i>✺</i><span>avena</span><i>✺</i><span>papas</span><i>✺</i><span>legumbres</span><i>✺</i><span>huevos</span><i>✺</i><span>yogur</span><i>✺</i><span>nueces</span><i>✺</i><span>fruta de temporada</span><i>✺</i>
+    </div>
+  </div>
+
+  <!-- PRINCIPIOS -->
+  <section class="section principles" id="principios">
+    <div class="wrap">
+      <header class="section__head">
+        <p class="eyebrow reveal">01 — Comer bien</p>
+        <h2 class="reveal">Lo básico, <em>sin dietas milagro.</em></h2>
+        <p class="section__lead reveal">Antes de hablar de deporte, hay una base que sirve para todos: un plato equilibrado, agua suficiente y comida de verdad. El resto son ajustes.</p>
+      </header>
+
+      <div class="plate-grid">
+        <figure class="plate reveal" aria-labelledby="plateCap">
+          <svg viewBox="0 0 320 320" role="img" aria-label="Plato dividido: la mitad verduras, un cuarto proteína y un cuarto carbohidratos">
+            <circle cx="160" cy="160" r="152" fill="var(--paper)" stroke="var(--line)" stroke-width="2"/>
+            <circle cx="160" cy="160" r="128" fill="var(--cream)"/>
+            <path class="plate__slice plate__slice--veg" d="M160 160 L160 32 A128 128 0 0 0 160 288 Z"/>
+            <path class="plate__slice plate__slice--pro" d="M160 160 L160 32 A128 128 0 0 1 288 160 Z"/>
+            <path class="plate__slice plate__slice--carb" d="M160 160 L288 160 A128 128 0 0 1 160 288 Z"/>
+            <line x1="160" y1="32" x2="160" y2="288" stroke="var(--cream)" stroke-width="4"/>
+            <line x1="160" y1="160" x2="288" y2="160" stroke="var(--cream)" stroke-width="4"/>
+            <text x="92" y="166" class="plate__label">½</text>
+            <text x="214" y="112" class="plate__label">¼</text>
+            <text x="214" y="226" class="plate__label">¼</text>
+          </svg>
+          <figcaption id="plateCap">
+            <span><b class="dot dot--veg"></b>Verduras y frutas</span>
+            <span><b class="dot dot--pro"></b>Proteína: pescado, legumbres, huevo, pollo</span>
+            <span><b class="dot dot--carb"></b>Carbohidrato: papas, quinoa, arroz, avena</span>
+          </figcaption>
+        </figure>
+
+        <ol class="rules">
+          <li class="rule reveal">
+            <span class="rule__n">1</span>
+            <div><h3>Arma el plato por mitades</h3><p>La mitad verduras, un cuarto proteína y un cuarto carbohidrato. Si entrenas fuerte ese día, el carbohidrato puede crecer.</p></div>
+          </li>
+          <li class="rule reveal">
+            <span class="rule__n">2</span>
+            <div><h3>Prioriza lo local y de temporada</h3><p>Valdivia tiene pescado del Pacífico, papas del sur y frutas que cambian con la estación. Suelen ser más frescos y baratos.</p></div>
+          </li>
+          <li class="rule reveal">
+            <span class="rule__n">3</span>
+            <div><h3>Menos ultraprocesados</h3><p>Fíjate en los sellos negros. Elige comidas con ingredientes que reconozcas y deja frituras y salsas pesadas para ocasiones.</p></div>
+          </li>
+          <li class="rule reveal">
+            <span class="rule__n">4</span>
+            <div><h3>Toma agua aunque llueva</h3><p>Con frío y humedad la sed se siente menos, pero igual se pierde líquido al entrenar. Lleva botella siempre.</p></div>
+          </li>
+          <li class="rule reveal">
+            <span class="rule__n">5</span>
+            <div><h3>El momento importa</h3><p>Come algo completo 2 a 3 horas antes de entrenar y recupera con carbohidrato y proteína en las 1 a 2 horas siguientes.</p></div>
+          </li>
+          <li class="rule reveal">
+            <span class="rule__n">6</span>
+            <div><h3>Aprovecha la cocina del frío</h3><p>Sopas, caldos y guisos de legumbres con verduras calientan, hidratan y recuperan. Perfectos para el invierno valdiviano.</p></div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPORTES -->
+  <section class="section sports" id="deportes">
+    <div class="wrap">
+      <header class="section__head section__head--light">
+        <p class="eyebrow reveal">02 — Por deporte</p>
+        <h2 class="reveal">¿Qué practicas? <em>Te decimos qué comer.</em></h2>
+        <p class="section__lead reveal">Los deportes con más presencia en Valdivia, según la encuesta nacional de hábitos deportivos y lo que se ve en el río, los cerros y las canchas de la ciudad.</p>
+      </header>
+
+      <div class="tabs" role="tablist" aria-label="Deportes">
+        <button class="tab is-active" role="tab" id="tab-futbol" aria-controls="p-futbol" aria-selected="true">
+          <span class="tab__icon" aria-hidden="true">⚽</span>Fútbol
+        </button>
+        <button class="tab" role="tab" id="tab-running" aria-controls="p-running" aria-selected="false">
+          <span class="tab__icon" aria-hidden="true">🏃</span>Running
+        </button>
+        <button class="tab" role="tab" id="tab-remo" aria-controls="p-remo" aria-selected="false">
+          <span class="tab__icon" aria-hidden="true">🚣</span>Remo y kayak
+        </button>
+        <button class="tab" role="tab" id="tab-bici" aria-controls="p-bici" aria-selected="false">
+          <span class="tab__icon" aria-hidden="true">🚴</span>Ciclismo y trekking
+        </button>
+        <span class="tabs__ink" aria-hidden="true"></span>
+      </div>
+
+      <!-- FÚTBOL -->
+      <article class="panel is-active" role="tabpanel" id="p-futbol" aria-labelledby="tab-futbol" tabindex="0">
+        <div class="panel__intro">
+          <div class="stat">
+            <span class="stat__num" data-count="26.1">26,1</span><span class="stat__unit">%</span>
+            <p>de los chilenos juega fútbol o futbolito: el deporte más practicado del país.</p>
+          </div>
+          <div>
+            <h3 class="panel__title">Fútbol y futbolito</h3>
+            <p>Esfuerzos explosivos, carreras cortas y 90 minutos (o una pichanga larga) de ida y vuelta. Necesitas energía disponible al pitazo y una buena recuperación para el próximo partido.</p>
+          </div>
+        </div>
+        <ol class="timeline">
+          <li><span class="when">2–3 h antes</span><p>Pasta o arroz con pollo o pescado y verduras cocidas. Evita frituras y salsas pesadas.</p></li>
+          <li><span class="when">30–60 min antes</span><p>Un plátano o una tostada con mermelada. Algo liviano y rápido de digerir.</p></li>
+          <li><span class="when">Durante</span><p>Agua. En partidos largos, fruta o una bebida isotónica en el entretiempo.</p></li>
+          <li><span class="when">Después · 1–2 h</span><p>Carbohidrato + proteína: arroz con merluza al horno y ensalada, o sándwich integral de pollo o atún con palta.</p></li>
+        </ol>
+        <aside class="where">
+          <h4>Dónde encontrarlo en Valdivia</h4>
+          <ul>
+            <li><a href="#local-pisquita">Pisquita de Sal</a> — platos saludables para el almuerzo previo.</li>
+            <li><a href="#local-trigo">Pastas Trigo</a> — pasta para cargar energía antes del partido.</li>
+            <li><a href="#local-mesa">Mesa Incógnita</a> — opciones vegetarianas para la recuperación.</li>
+          </ul>
+        </aside>
+      </article>
+
+      <!-- RUNNING -->
+      <article class="panel" role="tabpanel" id="p-running" aria-labelledby="tab-running" tabindex="0">
+        <div class="panel__intro">
+          <div class="stat">
+            <span class="stat__num" data-count="10.7">10,7</span><span class="stat__unit">km</span>
+            <p>mide la ruta a Laguna de los Patos, una de las favoritas para correr en la zona.</p>
+          </div>
+          <div>
+            <h3 class="panel__title">Running</h3>
+            <p>Es el segundo deporte más practicado en Chile (11,9%). En Valdivia se corre por la costanera, Isla Teja y rutas con humedales. La clave: llegar con energía y no descuidar la hidratación aunque haga frío.</p>
+          </div>
+        </div>
+        <ol class="timeline">
+          <li><span class="when">2–3 h antes</span><p>Avena con fruta y yogur, o pan integral con huevo.</p></li>
+          <li><span class="when">Durante · +60 min</span><p>En salidas de más de 60 a 90 minutos: geles, dátiles o plátano.</p></li>
+          <li><span class="when">Después</span><p>Bowl de quinoa con salmón o legumbres, verduras y palta. O un batido de leche o yogur con fruta.</p></li>
+          <li><span class="when">Hidratación</span><p>Repón líquidos y sodio en sesiones largas o con calor. Pésate antes y después para saber cuánto pierdes.</p></li>
+        </ol>
+        <aside class="where">
+          <h4>Dónde encontrarlo en Valdivia</h4>
+          <ul>
+            <li><a href="#local-montanes">El Montañes</a> — ensalada de quinoa, salmón con verduras y jugos naturales.</li>
+            <li><a href="#local-enki">Enki</a> — cocina 100% vegana para bowls con legumbres.</li>
+            <li><a href="#local-cromo">Cromo Café</a> — café vegano para el desayuno previo.</li>
+          </ul>
+        </aside>
+      </article>
+
+      <!-- REMO -->
+      <article class="panel" role="tabpanel" id="p-remo" aria-labelledby="tab-remo" tabindex="0">
+        <div class="panel__intro">
+          <div class="stat">
+            <span class="stat__num stat__num--word">Calle&nbsp;Calle</span>
+            <p>el río de aguas tranquilas donde entrenan clubes como los de la UACh y el Club Phoenix en Isla Teja.</p>
+          </div>
+          <div>
+            <h3 class="panel__title">Remo y kayak</h3>
+            <p>La identidad deportiva de Valdivia está en el agua. Remo y kayak exigen mucho tren superior y resistencia, a menudo con frío y humedad. Come para rendir y también para recuperar temperatura.</p>
+          </div>
+        </div>
+        <ol class="timeline">
+          <li><span class="when">Antes</span><p>Comida rica en carbohidratos: papas o arroz con huevo, o tostadas con palta y huevo.</p></li>
+          <li><span class="when">Durante · salidas largas</span><p>Fruta, frutos secos o una barra de cereal, y agua a mano en el bote.</p></li>
+          <li><span class="when">Después</span><p>Pescado (salmón, congrio) con papas cocidas o quinoa y ensalada. Suma proteína para reparar brazos y espalda.</p></li>
+          <li><span class="when">Tip del sur</span><p>En invierno, sopas y caldos con legumbres y verduras te devuelven temperatura y energía.</p></li>
+        </ol>
+        <aside class="where">
+          <h4>Dónde encontrarlo en Valdivia</h4>
+          <ul>
+            <li><a href="#local-fishcarraldo">Fishcarraldo</a> — pescado y productos locales.</li>
+            <li><a href="#local-crudos">Crudos Valdivia</a> — ceviche y tártaro para una proteína fresca.</li>
+            <li><a href="#local-dharma">Café Dharma</a> — un lugar cálido para volver del río.</li>
+          </ul>
+        </aside>
+      </article>
+
+      <!-- CICLISMO -->
+      <article class="panel" role="tabpanel" id="p-bici" aria-labelledby="tab-bici" tabindex="0">
+        <div class="panel__intro">
+          <div class="stat">
+            <span class="stat__num stat__num--word">Los&nbsp;Ríos</span>
+            <p>es destino de turismo aventura: bosques, lagos y senderos a poca distancia de la ciudad.</p>
+          </div>
+          <div>
+            <h3 class="panel__title">Ciclismo y trekking</h3>
+            <p>Salidas largas, a ritmo sostenido y lejos de cualquier almacén. Aquí lo importante es llevar comida práctica en la mochila y comer poco pero seguido.</p>
+          </div>
+        </div>
+        <ol class="timeline">
+          <li><span class="when">Antes</span><p>Avena, pan integral con queso o palta, y fruta.</p></li>
+          <li><span class="when">Durante</span><p>Plátano, frutos secos, pan con jamón o queso y barras de cereal. Toma agua con frecuencia.</p></li>
+          <li><span class="when">Después</span><p>Guiso de legumbres con verduras, o arroz con pollo o pescado y ensalada.</p></li>
+          <li><span class="when">En la mochila</span><p>Calcula algo para comer cada 45 a 60 minutos de actividad y una capa extra: el clima cambia rápido.</p></li>
+        </ol>
+        <aside class="where">
+          <h4>Dónde encontrarlo en Valdivia</h4>
+          <ul>
+            <li><a href="#local-delcerro">Del Cerro</a> — panadería vegana para armar la colación.</li>
+            <li><a href="#local-delicias">Delicias del Río</a> — tienda vegana para abastecerte antes de salir.</li>
+            <li><a href="#local-chileguey">ChileGüey</a> — porciones grandes para el hambre post-ruta.</li>
+          </ul>
+        </aside>
+      </article>
+    </div>
+  </section>
+
+  <!-- DESPENSA -->
+  <section class="section pantry" id="despensa">
+    <div class="wrap">
+      <header class="section__head">
+        <p class="eyebrow reveal">03 — Despensa del sur</p>
+        <h2 class="reveal">Ingredientes que <em>ya tienes cerca.</em></h2>
+        <p class="section__lead reveal">No necesitas superalimentos importados. Esto se consigue en cualquier feria o supermercado de Valdivia y cubre casi todo lo que pide el deporte.</p>
+      </header>
+
+      <div class="pantry__grid">
+        <div class="card-ing reveal" style="--c: var(--coral)">
+          <span class="card-ing__tag">Proteína</span>
+          <h3>Salmón</h3>
+          <p>Proteína y grasas omega-3. Ideal después de remar o correr.</p>
+        </div>
+        <div class="card-ing reveal" style="--c: var(--river-2)">
+          <span class="card-ing__tag">Proteína</span>
+          <h3>Merluza y congrio</h3>
+          <p>Pescados blancos, livianos, buenos al horno o en caldillo.</p>
+        </div>
+        <div class="card-ing reveal" style="--c: var(--zest)">
+          <span class="card-ing__tag">Energía</span>
+          <h3>Papas</h3>
+          <p>Carbohidrato del sur por excelencia. Cocidas, mejor que fritas.</p>
+        </div>
+        <div class="card-ing reveal" style="--c: var(--moss)">
+          <span class="card-ing__tag">Energía</span>
+          <h3>Quinoa y avena</h3>
+          <p>Carbohidrato con fibra y algo de proteína para bowls y desayunos.</p>
+        </div>
+        <div class="card-ing reveal" style="--c: var(--coral)">
+          <span class="card-ing__tag">Proteína</span>
+          <h3>Legumbres</h3>
+          <p>Porotos, lentejas, garbanzos: guisos que calientan y recuperan.</p>
+        </div>
+        <div class="card-ing reveal" style="--c: var(--zest)">
+          <span class="card-ing__tag">Básico</span>
+          <h3>Huevos y yogur</h3>
+          <p>Proteína rápida y barata para antes o después de entrenar.</p>
+        </div>
+        <div class="card-ing reveal" style="--c: var(--moss)">
+          <span class="card-ing__tag">Grasas buenas</span>
+          <h3>Nueces y palta</h3>
+          <p>Energía densa para la mochila y para completar el plato.</p>
+        </div>
+        <div class="card-ing reveal" style="--c: var(--river-2)">
+          <span class="card-ing__tag">Vitaminas</span>
+          <h3>Fruta de temporada</h3>
+          <p>Plátano todo el año; en verano, berries y frutas del sur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALES -->
+  <section class="section places" id="locales">
+    <div class="wrap">
+      <header class="section__head">
+        <p class="eyebrow reveal">04 — Dónde comer</p>
+        <h2 class="reveal">Valdivia saludable, <em>local por local.</em></h2>
+        <p class="section__lead reveal">Una selección de lugares con opciones veganas, vegetarianas o saludables. Revisa horarios antes de ir: pueden cambiar.</p>
+      </header>
+
+      <div class="filters" role="group" aria-label="Filtrar locales">
+        <button class="chip is-active" data-filter="all" aria-pressed="true">Todos</button>
+        <button class="chip" data-filter="vegano" aria-pressed="false">100% vegano</button>
+        <button class="chip" data-filter="veg" aria-pressed="false">Opciones veg</button>
+        <button class="chip" data-filter="pescado" aria-pressed="false">Pescado</button>
+        <button class="chip" data-filter="saludable" aria-pressed="false">Saludable</button>
+      </div>
+
+      <div class="places__grid" id="placesGrid">
+        <article class="place" id="local-enki" data-tags="vegano">
+          <span class="place__type">Restaurante vegano</span>
+          <h3>Enki</h3>
+          <p class="place__addr">O'Higgins 374</p>
+          <p class="place__note">Cocina 100% vegana.</p>
+          <div class="place__links">
+            <a href="tel:+56936975889">+56 9 3697 5889</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Enki+O'Higgins+374+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place" id="local-cromo" data-tags="vegano">
+          <span class="place__type">Café vegano</span>
+          <h3>Cromo Café</h3>
+          <p class="place__addr">Phillipi 921</p>
+          <p class="place__note">Café 100% vegano.</p>
+          <div class="place__links">
+            <a href="https://www.google.com/maps/search/?api=1&query=Cromo+Cafe+Phillipi+921+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place" id="local-delcerro" data-tags="vegano">
+          <span class="place__type">Panadería vegana</span>
+          <h3>Del Cerro</h3>
+          <p class="place__addr">García Reyes 464, 2º piso</p>
+          <p class="place__note">Pan para la colación de la ruta.</p>
+          <div class="place__links">
+            <a href="tel:+56976443534">+56 9 7644 3534</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Del+Cerro+Garcia+Reyes+464+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place" id="local-delicias" data-tags="vegano">
+          <span class="place__type">Tienda vegana</span>
+          <h3>Carnicería Vegana Delicias del Río</h3>
+          <p class="place__addr">Cochrane 489</p>
+          <p class="place__note">Productos veganos para cocinar en casa.</p>
+          <div class="place__links">
+            <a href="tel:+56955335037">+56 9 5533 5037</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Delicias+del+Rio+Cochrane+489+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place" id="local-dharma" data-tags="veg">
+          <span class="place__type">Café · opciones veg</span>
+          <h3>Café Dharma</h3>
+          <p class="place__addr">Yungay 640, esq. San Carlos</p>
+          <p class="place__note">Opciones vegetarianas y veganas.</p>
+          <div class="place__links">
+            <a href="tel:+56632272027">+56 63 227 2027</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Cafe+Dharma+Yungay+640+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place" id="local-mesa" data-tags="veg">
+          <span class="place__type">Restaurante · opciones veg</span>
+          <h3>Mesa Incógnita</h3>
+          <p class="place__addr">O'Higgins 210</p>
+          <p class="place__note">Opciones vegetarianas y veganas.</p>
+          <div class="place__links">
+            <a href="tel:+56949011435">+56 9 4901 1435</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Mesa+Incognita+O'Higgins+210+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place" id="local-trigo" data-tags="veg">
+          <span class="place__type">Pastas · opciones veg</span>
+          <h3>Pastas Trigo</h3>
+          <p class="place__addr">Lord Cochrane 375</p>
+          <p class="place__note">Pasta para la carga de energía.</p>
+          <div class="place__links">
+            <a href="https://www.google.com/maps/search/?api=1&query=Pastas+Trigo+Lord+Cochrane+375+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place" id="local-chileguey" data-tags="veg">
+          <span class="place__type">Mexicano · opciones veg</span>
+          <h3>ChileGüey</h3>
+          <p class="place__addr">Carlos Anwandter 288b</p>
+          <p class="place__note">Opciones veganas y porciones grandes, según reseñas.</p>
+          <div class="place__links">
+            <a href="tel:+56930846111">+56 9 3084 6111</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=ChileGuey+Carlos+Anwandter+288+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place place--feature" id="local-pisquita" data-tags="saludable">
+          <span class="place__type">Foodtruck saludable</span>
+          <h3>Pisquita de Sal</h3>
+          <p class="place__addr">Baquedano 220, esq. Pérez Rosales</p>
+          <p class="place__note">Platos saludables y clásicos, con espacio lector y vivero. Martes a sábado, 11:30 a 22:30. También en PedidosYa.</p>
+          <div class="place__links">
+            <a href="tel:+56949197610">+56 9 4919 7610</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Pisquita+de+Sal+Baquedano+220+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place" id="local-montanes" data-tags="saludable pescado">
+          <span class="place__type">Restaurante saludable</span>
+          <h3>El Montañes</h3>
+          <p class="place__addr">Valdivia</p>
+          <p class="place__note">Ensalada de quinoa, salmón con verduras y jugos naturales. Algo caro, según reseñas.</p>
+          <div class="place__links">
+            <a href="https://www.google.com/maps/search/?api=1&query=El+Montanes+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place" id="local-crudos" data-tags="pescado">
+          <span class="place__type">Ceviche y tártaro</span>
+          <h3>Crudos Valdivia</h3>
+          <p class="place__addr">Valdivia</p>
+          <p class="place__note">Pescado y marisco crudo. Según reseñas, solo efectivo o transferencia.</p>
+          <div class="place__links">
+            <a href="https://www.google.com/maps/search/?api=1&query=Crudos+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+
+        <article class="place" id="local-fishcarraldo" data-tags="pescado">
+          <span class="place__type">Pescados y productos locales</span>
+          <h3>Fishcarraldo</h3>
+          <p class="place__addr">Valdivia</p>
+          <p class="place__note">Pescado, ceviche y producto local. Precios altos, según reseñas.</p>
+          <div class="place__links">
+            <a href="https://www.google.com/maps/search/?api=1&query=Fishcarraldo+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="places__empty" id="placesEmpty" hidden>No hay locales con ese filtro.</p>
+    </div>
+  </section>
+
+  <!-- NOTA -->
+  <section class="section note">
+    <div class="wrap note__inner reveal">
+      <h2>Una nota honesta</h2>
+      <div class="note__cols">
+        <p>Las recomendaciones de comida son pautas generales de nutrición deportiva y <strong>no reemplazan a un nutricionista</strong>. Si tienes una condición de salud o compites en alto nivel, busca orientación profesional.</p>
+        <p>No existe un ranking oficial de deportes en Valdivia. Combinamos la encuesta nacional de hábitos deportivos (MINDEP, publicada en 2016, datos de todo Chile) con la actividad visible en la ciudad. Los datos de locales vienen de directorios y reseñas a octubre de 2026.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <span class="footer__logo">Zestia</span>
+      <p>Comer bien para moverse en Valdivia.</p>
+    </div>
+    <nav class="footer__links" aria-label="Pie de página">
+      <a href="#principios">Comer bien</a>
+      <a href="#deportes">Por deporte</a>
+      <a href="#despensa">Despensa</a>
+      <a href="#locales">Locales</a>
+    </nav>
+    <p class="footer__small">Fuentes: HappyCow, Wanderlog, guía Pisquita de Sal, Emol (encuesta MINDEP), Diario UACh, Komoot, Wikiloc, Civitatis. Hecho en Valdivia, 2026.</p>
+  </div>
+</footer>
+
+</body>
+</html>
