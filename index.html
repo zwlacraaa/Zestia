@@ -4,18 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zestia · Comer bien para moverse en Valdivia</title>
-<meta name="description" content="Zestia: guía de comida saludable para quienes hacen deporte en Valdivia. Qué comer antes, durante y después del fútbol, running, remo, kayak, ciclismo y trekking, y dónde encontrarlo en la ciudad.">
+<meta name="description" content="Zestia: guía y chat de comida saludable para quienes hacen deporte en Valdivia. Qué comer antes, durante y después del fútbol, running, remo, kayak, ciclismo y trekking, y dónde encontrarlo en la ciudad.">
 <meta name="theme-color" content="#0e3a32">
 <meta property="og:title" content="Zestia · Comer bien para moverse en Valdivia">
 <meta property="og:description" content="Qué comer según tu deporte y dónde encontrarlo en Valdivia.">
 <meta property="og:type" content="website">
-<link rel="icon" href="assets/img/favicon.svg?v=20261018" type="image/svg+xml">
+<meta property="og:image" content="https://zwlacraaa.github.io/Zestia/assets/img/fotos/valdivia-rio-atardecer.jpg">
+<link rel="icon" href="assets/img/favicon.svg?v=20261025" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20261018">
+<link rel="stylesheet" href="styles.css?v=20261025">
 <script>document.documentElement.classList.add('js');</script>
-<script src="main.js?v=20261018" defer></script>
+<script src="main.js?v=20261025" defer></script>
 </head>
 <body>
 
@@ -38,6 +39,7 @@
     <a href="#deportes">Por deporte</a>
     <a href="#despensa">Despensa del sur</a>
     <a href="#locales">Dónde comer</a>
+    <a class="nav__cta" href="https://zestia.onrender.com/chat">Habla con Zestia</a>
   </nav>
   <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
     <span></span><span></span>
@@ -55,15 +57,16 @@
         <span class="line"><span class="reveal"><em>chispa</em>, muévete</span></span>
         <span class="line"><span class="reveal">con el río.</span></span>
       </h1>
-      <p class="hero__lead reveal">Zestia es una guía para comer saludable en una ciudad que rema, corre y juega a la pelota bajo la lluvia. Te contamos qué poner en el plato según tu deporte, y dónde encontrarlo en Valdivia.</p>
+      <p class="hero__lead reveal">Zestia es una guía y un chat para comer saludable en una ciudad que rema, corre y juega a la pelota bajo la lluvia. Te contamos qué poner en el plato según tu deporte, dónde encontrarlo en Valdivia, y te respondemos al tiro por chat.</p>
       <div class="hero__cta reveal">
-        <a class="btn btn--zest" href="#deportes">Elige tu deporte</a>
-        <a class="btn btn--ghost" href="#locales">Ver locales</a>
+        <a class="btn btn--zest" href="https://zestia.onrender.com/chat">💬 Habla con Zestia</a>
+        <a class="btn btn--ghost" href="#deportes">Elige tu deporte</a>
       </div>
     </div>
 
-    <div class="hero__art" aria-hidden="true">
-      <svg class="citrus" viewBox="0 0 200 200">
+    <div class="hero__art">
+      <img class="hero__photo" src="assets/img/fotos/valdivia-rio-atardecer.jpg" width="1280" height="853" alt="La costanera de Valdivia y el río Calle-Calle al atardecer" fetchpriority="high">
+      <svg class="citrus citrus--sticker" viewBox="0 0 200 200" aria-hidden="true">
         <circle cx="100" cy="100" r="96" fill="var(--zest)"/>
         <circle cx="100" cy="100" r="84" fill="#f8d77a"/>
         <g fill="#f5c443" stroke="#fbe7ad" stroke-width="3">
@@ -78,7 +81,7 @@
         </g>
         <circle cx="100" cy="100" r="8" fill="#fbe7ad"/>
       </svg>
-      <div class="hero__badge">
+      <div class="hero__badge" aria-hidden="true">
         <strong>5</strong>
         <span>deportes<br>con guía</span>
       </div>
@@ -185,6 +188,7 @@
 
       <!-- FÚTBOL -->
       <article class="panel is-active" role="tabpanel" id="p-futbol" aria-labelledby="tab-futbol" tabindex="0">
+        <figure class="panel__photo"><img src="assets/img/fotos/futbol-estadio-parque-municipal.jpg" width="1280" height="853" alt="Partido en el Estadio Parque Municipal de Valdivia" loading="lazy"><figcaption>Estadio Parque Municipal, Valdivia</figcaption></figure>
         <div class="panel__intro">
           <div class="stat">
             <span class="stat__num" data-count="26.1">26,1</span><span class="stat__unit">%</span>
@@ -213,6 +217,7 @@
 
       <!-- RUNNING -->
       <article class="panel" role="tabpanel" id="p-running" aria-labelledby="tab-running" tabindex="0">
+        <figure class="panel__photo"><img src="assets/img/fotos/running-costanera-las-animas.jpg" width="1280" height="960" alt="Paseo de la costanera junto al río Calle-Calle, en Las Ánimas" loading="lazy"><figcaption>Costanera de Las Ánimas, Valdivia</figcaption></figure>
         <div class="panel__intro">
           <div class="stat">
             <span class="stat__num" data-count="10.7">10,7</span><span class="stat__unit">km</span>
@@ -232,15 +237,16 @@
         <aside class="where">
           <h4>Dónde encontrarlo en Valdivia</h4>
           <ul>
-            <li><a href="#local-montanes">El Montañes</a> — ensalada de quinoa, salmón con verduras y jugos naturales.</li>
             <li><a href="#local-enki">Enki</a> — cocina 100% vegana para bowls con legumbres.</li>
-            <li><a href="#local-cromo">Cromo Café</a> — café vegano para el desayuno previo.</li>
+            <li><a href="#local-delcerro">Del Cerro</a> — pan para el desayuno previo.</li>
+            <li><a href="#local-rincon">Rincón de los Ríos</a> — salmón y congrio para la recuperación.</li>
           </ul>
         </aside>
       </article>
 
       <!-- REMO -->
       <article class="panel" role="tabpanel" id="p-remo" aria-labelledby="tab-remo" tabindex="0">
+        <figure class="panel__photo"><img src="assets/img/fotos/remo-rio-calle-calle.jpg" width="1280" height="914" alt="El río Calle-Calle en calma al amanecer" loading="lazy"><figcaption>Río Calle-Calle al amanecer</figcaption></figure>
         <div class="panel__intro">
           <div class="stat">
             <span class="stat__num stat__num--word">Calle&nbsp;Calle</span>
@@ -260,8 +266,8 @@
         <aside class="where">
           <h4>Dónde encontrarlo en Valdivia</h4>
           <ul>
-            <li><a href="#local-fishcarraldo">Fishcarraldo</a> — pescado y productos locales.</li>
-            <li><a href="#local-crudos">Crudos Valdivia</a> — ceviche y tártaro para una proteína fresca.</li>
+            <li><a href="#local-feria">Feria Fluvial</a> — pescado fresco a orillas del mismo río.</li>
+            <li><a href="#local-rincon">Rincón de los Ríos</a> — ceviche y pescado a la plancha.</li>
             <li><a href="#local-dharma">Café Dharma</a> — un lugar cálido para volver del río.</li>
           </ul>
         </aside>
@@ -269,6 +275,7 @@
 
       <!-- CICLISMO -->
       <article class="panel" role="tabpanel" id="p-bici" aria-labelledby="tab-bici" tabindex="0">
+        <figure class="panel__photo"><img src="assets/img/fotos/trekking-parque-oncol.jpg" width="1280" height="720" alt="Bosque nativo visto desde el Parque Oncol" loading="lazy"><figcaption>Parque Oncol, a minutos de Valdivia</figcaption></figure>
         <div class="panel__intro">
           <div class="stat">
             <span class="stat__num stat__num--word">Los&nbsp;Ríos</span>
@@ -297,14 +304,46 @@
     </div>
   </section>
 
+  <!-- CHAT -->
+  <section class="section chatcta" id="chat">
+    <div class="wrap chatcta__inner">
+      <div class="chatcta__text">
+        <p class="eyebrow reveal">03 — Tu asistente</p>
+        <h2 class="reveal">¿Dudas? <em>Pregúntale a Zestia.</em></h2>
+        <p class="section__lead reveal">Un chat con inteligencia artificial que te responde al tiro desde el celular: recetas con ingredientes del sur, qué comer antes y después de entrenar, y planes con lista de compras. Siempre respeta tus alergias y, si el tema es delicado, te atiende una persona del equipo.</p>
+        <ol class="chatcta__steps reveal">
+          <li><b>1</b> Abre el chat o escanea el QR</li>
+          <li><b>2</b> Toca “Empezar a conversar”</li>
+          <li><b>3</b> Cuéntale tu deporte y tu objetivo</li>
+        </ol>
+        <div class="hero__cta reveal">
+          <a class="btn btn--zest" href="https://zestia.onrender.com/chat">💬 Abrir el chat</a>
+        </div>
+        <p class="chatcta__small reveal">Gratis las primeras 25 respuestas · Sin descargar apps · Zestia Premium $3.990 al mes</p>
+      </div>
+      <div class="chatcta__art reveal" aria-hidden="true">
+        <div class="phone">
+          <div class="phone__top"><span class="phone__dot"></span>Zestia <small>en línea</small></div>
+          <p class="bubble bubble--me">Juego fútbol el sábado. ¿Qué como antes?</p>
+          <p class="bubble">2 a 3 horas antes: arroz con pollo y verduras cocidas. 30 minutos antes, un plátano. ¡Y lleva agua! ⚽</p>
+          <p class="bubble bubble--me">¿Y una colación para el colegio?</p>
+          <p class="bubble">Yogur con avena y manzana, o un sándwich de huevo. Fácil y rendidor 🍎</p>
+        </div>
+        <figure class="chatcta__qr"><img src="assets/img/qr-chat.svg" width="160" height="160" alt=""><figcaption>Escanéalo con tu celular</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
   <!-- DESPENSA -->
   <section class="section pantry" id="despensa">
     <div class="wrap">
       <header class="section__head">
-        <p class="eyebrow reveal">03 — Despensa del sur</p>
+        <p class="eyebrow reveal">04 — Despensa del sur</p>
         <h2 class="reveal">Ingredientes que <em>ya tienes cerca.</em></h2>
         <p class="section__lead reveal">No necesitas superalimentos importados. Esto se consigue en cualquier feria o supermercado de Valdivia y cubre casi todo lo que pide el deporte.</p>
       </header>
+
+      <figure class="pantry__photo reveal"><img src="assets/img/fotos/despensa-feria-fluvial.jpg" width="1280" height="721" alt="Puestos de frutas y verduras en la Feria Fluvial de Valdivia" loading="lazy"><figcaption>Frutas y verduras en la Feria Fluvial de Valdivia</figcaption></figure>
 
       <div class="pantry__grid">
         <div class="card-ing reveal" style="--c: var(--coral)">
@@ -355,7 +394,7 @@
   <section class="section places" id="locales">
     <div class="wrap">
       <header class="section__head">
-        <p class="eyebrow reveal">04 — Dónde comer</p>
+        <p class="eyebrow reveal">05 — Dónde comer</p>
         <h2 class="reveal">Valdivia saludable, <em>local por local.</em></h2>
         <p class="section__lead reveal">Una selección de lugares con opciones veganas, vegetarianas o saludables. Revisa horarios antes de ir: pueden cambiar.</p>
       </header>
@@ -380,15 +419,6 @@
           </div>
         </article>
 
-        <article class="place" id="local-cromo" data-tags="vegano">
-          <span class="place__type">Café vegano</span>
-          <h3>Cromo Café</h3>
-          <p class="place__addr">Phillipi 921</p>
-          <p class="place__note">Café 100% vegano.</p>
-          <div class="place__links">
-            <a href="https://www.google.com/maps/search/?api=1&query=Cromo+Cafe+Phillipi+921+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
-          </div>
-        </article>
 
         <article class="place" id="local-delcerro" data-tags="vegano">
           <span class="place__type">Panadería vegana</span>
@@ -440,6 +470,7 @@
           <p class="place__addr">Lord Cochrane 375</p>
           <p class="place__note">Pasta para la carga de energía.</p>
           <div class="place__links">
+            <a href="tel:+56966905660">+56 9 6690 5660</a>
             <a href="https://www.google.com/maps/search/?api=1&query=Pastas+Trigo+Lord+Cochrane+375+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
           </div>
         </article>
@@ -466,33 +497,27 @@
           </div>
         </article>
 
-        <article class="place" id="local-montanes" data-tags="saludable pescado">
-          <span class="place__type">Restaurante saludable</span>
-          <h3>El Montañes</h3>
-          <p class="place__addr">Valdivia</p>
-          <p class="place__note">Ensalada de quinoa, salmón con verduras y jugos naturales. Algo caro, según reseñas.</p>
+
+
+        <article class="place place--photo" id="local-feria" data-tags="pescado saludable">
+          <img class="place__img" src="assets/img/fotos/feria-fluvial-pescados.jpg" width="1280" height="960" alt="Puestos de pescado en la Feria Fluvial de Valdivia" loading="lazy">
+          <span class="place__type">Mercado · pescado y verduras</span>
+          <h3>Feria Fluvial</h3>
+          <p class="place__addr">Costanera Arturo Prat, frente al Muelle Schuster</p>
+          <p class="place__note">Pescados y mariscos frescos, frutas y verduras del sur, con los lobos marinos de vecinos. Ve en la mañana: el pescado más fresco se vende temprano.</p>
           <div class="place__links">
-            <a href="https://www.google.com/maps/search/?api=1&query=El+Montanes+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Feria+Fluvial+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
           </div>
         </article>
 
-        <article class="place" id="local-crudos" data-tags="pescado">
-          <span class="place__type">Ceviche y tártaro</span>
-          <h3>Crudos Valdivia</h3>
-          <p class="place__addr">Valdivia</p>
-          <p class="place__note">Pescado y marisco crudo. Según reseñas, solo efectivo o transferencia.</p>
+        <article class="place" id="local-rincon" data-tags="pescado">
+          <span class="place__type">Pescados y mariscos</span>
+          <h3>Rincón de los Ríos</h3>
+          <p class="place__addr">Yungay 425, local 208 · Mercado Municipal</p>
+          <p class="place__note">Ceviches, congrio y pescado a la plancha desde 2001. Pide la preparación a la plancha para una opción más liviana.</p>
           <div class="place__links">
-            <a href="https://www.google.com/maps/search/?api=1&query=Crudos+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
-          </div>
-        </article>
-
-        <article class="place" id="local-fishcarraldo" data-tags="pescado">
-          <span class="place__type">Pescados y productos locales</span>
-          <h3>Fishcarraldo</h3>
-          <p class="place__addr">Valdivia</p>
-          <p class="place__note">Pescado, ceviche y producto local. Precios altos, según reseñas.</p>
-          <div class="place__links">
-            <a href="https://www.google.com/maps/search/?api=1&query=Fishcarraldo+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
+            <a href="https://wa.me/56988698129" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Rincon+de+los+Rios+Yungay+425+Valdivia" target="_blank" rel="noopener">Mapa ↗</a>
           </div>
         </article>
       </div>
@@ -507,12 +532,14 @@
       <h2>Una nota honesta</h2>
       <div class="note__cols">
         <p>Las recomendaciones de comida son pautas generales de nutrición deportiva y <strong>no reemplazan a un nutricionista</strong>. Si tienes una condición de salud o compites en alto nivel, busca orientación profesional.</p>
-        <p>No existe un ranking oficial de deportes en Valdivia. Combinamos la encuesta nacional de hábitos deportivos (MINDEP, publicada en 2016, datos de todo Chile) con la actividad visible en la ciudad. Los datos de locales vienen de directorios y reseñas a octubre de 2026.</p>
+        <p>No existe un ranking oficial de deportes en Valdivia. Combinamos la encuesta nacional de hábitos deportivos (MINDEP, publicada en 2016, datos de todo Chile) con la actividad visible en la ciudad. Los datos de locales vienen de directorios, Sernatur y reseñas, revisados el 25 de octubre de 2026; si un local cerró o cambió, avísanos por el chat.</p>
       </div>
     </div>
   </section>
 
 </main>
+
+<a class="fab" href="https://zestia.onrender.com/chat" aria-label="Habla con Zestia por chat">💬 <span>Habla con Zestia</span></a>
 
 <footer class="footer">
   <div class="wrap footer__inner">
@@ -525,9 +552,11 @@
       <a href="#deportes">Por deporte</a>
       <a href="#despensa">Despensa</a>
       <a href="#locales">Locales</a>
+      <a href="https://zestia.onrender.com/chat">Chat con Zestia</a>
       <a href="privacidad.html">Privacidad</a>
     </nav>
-    <p class="footer__small">Fuentes: HappyCow, Wanderlog, guía Pisquita de Sal, Emol (encuesta MINDEP), Diario UACh, Komoot, Wikiloc, Civitatis. Hecho en Valdivia, 2026.</p>
+    <p class="footer__small">Fuentes: HappyCow, Wanderlog, Sernatur, Tripadvisor, guía Pisquita de Sal, Emol (encuesta MINDEP), Diario UACh, Komoot, Wikiloc, Civitatis. Hecho en Valdivia, 2026.</p>
+    <p class="footer__small footer__credits">Fotos de Valdivia en Wikimedia Commons, sin modificaciones (solo recortadas en pantalla): <a href="https://commons.wikimedia.org/wiki/File:Feria_Fluvial_de_Valdivia.JPG">Jowyto</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.es">CC BY-SA 3.0</a>) · <a href="https://commons.wikimedia.org/wiki/File:Valdivia_-_Santa_Cruz,_20190217_-_04.jpg">Carlos Figueroa Rojas</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>) · <a href="https://commons.wikimedia.org/wiki/File:Puente_de_Las_%C3%81nimas_02.jpg">Lin linao</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>) · <a href="https://commons.wikimedia.org/wiki/File:Nuevo_d%C3%ADa_en_el_Calle-Calle.JPG">ErwinWoenckhaus</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.es">CC BY-SA 3.0</a>) · <a href="https://commons.wikimedia.org/wiki/File:Panorama_from_the_Oncol_Park.jpg">Framarting</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>) · <a href="https://commons.wikimedia.org/wiki/File:Feria_Fluvial_de_Valdivia,_locales_de_venta.JPG">AlBustos</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.es">CC BY-SA 3.0</a>) · <a href="https://commons.wikimedia.org/wiki/File:Feria_Fluvial_Valdivia_002.JPG">CristianDiaz</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.es">CC BY-SA 3.0</a>).</p>
   </div>
 </footer>
 
